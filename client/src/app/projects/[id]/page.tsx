@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 import ProjectHeader from "../ProjectHeader";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import BoardView from "../BoardView";
 import ListView from "../ListView";
 import TimeLineView from "../TimelineView";

@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
 import { useGetProjectsQuery } from "@/state/api";
 import {
   LockIcon,
-  Icon,
   LucideIcon,
   Home,
   Briefcase,
@@ -12,7 +13,6 @@ import {
   Settings,
   User,
   Users,
-  Menu,
   X,
   ChevronUp,
   ChevronDown,
@@ -174,12 +174,6 @@ const SidebarLink = ({
   const pathName = usePathname();
   const isActive =
     pathName === href || (pathName === "/" && href === "/dashboard");
-  const screenWidth = window.innerWidth;
-
-  const dispatch = useAppDispatch();
-  const isSidebarCollapsed = useAppSelector(
-    (state) => state.global.isSidebarCollapsed,
-  );
 
   return (
     <Link href={href} className="w-full">

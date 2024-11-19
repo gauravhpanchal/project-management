@@ -58,7 +58,7 @@ const Users = () => {
         <DataGrid
           rows={users || []}
           columns={columns}
-          getRowId={(row: any) => row.userId}
+          getRowId={(row) => row.userId}
           pagination
           slots={{
             toolbar: CustomToolbar,
