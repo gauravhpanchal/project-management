@@ -67,7 +67,7 @@ const Sidebar = () => {
         {/* Team */}
         <div className="flex items-center gap-5 border-y-[1.5px] border-gray-200 px-8 py-4 dark:border-y-gray-700">
           <Image
-            src="/logo.png"
+            src="https://projectmanagement-s3-img.s3.ap-south-1.amazonaws.com/logo.png"
             alt="logo"
             width={40}
             height={40}
