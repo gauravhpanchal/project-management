@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { fetchAuthSession, getCurrentUser } from "aws-amplify/auth";
@@ -102,9 +102,7 @@ export const api = createApi({
           const userDetails = userDetailsResponse.data as User;
 
           return { data: { user, userSub, userDetails } };
-        } 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        catch (error: any) {
+        } catch (error: any) {
           return {
             error: error.message || "Could not fetch user data",
           };
