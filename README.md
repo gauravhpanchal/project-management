@@ -1,4 +1,4 @@
-# OrganizeX - Project Management Dashboard  
+# OrganizeX - Project Management Platform  
 
 A comprehensive dashboard for Project Management, designed to streamline workflows and enhance productivity. The application features dynamic data visualization, efficient state management, secure user authentication, and drag-and-drop functionality for intuitive task management.  
 
